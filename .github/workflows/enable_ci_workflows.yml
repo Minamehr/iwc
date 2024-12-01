@@ -1,7 +1,5 @@
 name: enable CI workflows for iwc-workflows repositories
 on:
-  schedule:
-    - cron: '0 2 * * *'
   workflow_dispatch:
 jobs:
   enable:
