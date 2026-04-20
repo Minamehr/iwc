@@ -2,13 +2,13 @@
     {
         "iwcID": "functional-annotation-of-sequences-main",
         "trsID": "#workflow/github.com/iwc-workflows/functional-annotation-of-sequences/main",
-        "uuid": "954e92e2-ba0e-4748-9888-67792bb6baec",
+        "uuid": "e1e6ce2d-d7c5-45a6-93eb-d730768f7c06",
         "name": "Functional annotation of sequences",
         "annotation": "This workflow performs functional annotation of protein and nucleotide sequences (including CDS, genomes and metagenomes) using eggNOG-mapper and InterProScan, supports collection inputs and optional analysis steps, and can assess KEGG pathway completeness.",
         "tags": [],
-        "release": "0.2",
+        "release": "0.3",
         "collections": [],
-        "updated": "2026-02-07T00:00:00"
+        "updated": "2026-03-27T00:00:00"
     },
     {
         "iwcID": "annotation-braker3-main",
@@ -166,15 +166,15 @@
     {
         "iwcID": "mag-genome-annotation-parallel-main",
         "trsID": "#workflow/github.com/iwc-workflows/mag-genome-annotation-parallel/main",
-        "uuid": "267c95ca-9936-4a12-8468-f5451314e361",
+        "uuid": "53396aff-fb10-481b-ab89-515657510118",
         "name": "MAG Genome Annotation Parallel",
         "annotation": "This workflow performs automated, parallel annotation of metagenome-assembled genomes (MAGs) to generate standardized annotation outputs, merged summary tables, and integrated quality reports across all genomes.",
         "tags": [],
-        "release": "0.1",
+        "release": "0.2",
         "collections": [
             "Microbiome"
         ],
-        "updated": "2026-03-01T00:00:00"
+        "updated": "2026-04-06T00:00:00"
     },
     {
         "iwcID": "metagenomic-raw-reads-amr-analysis-main",
@@ -1010,14 +1010,14 @@
         "iwcID": "openms-metaprosip-main",
         "trsID": "#workflow/github.com/iwc-workflows/openms-metaprosip/main",
         "uuid": "b03da1a7-fc6f-419f-aa2c-431a670f9a96",
-        "name": "MetaProSIP OpenMS 2.8",
+        "name": "MetaProSIP OpenMS",
         "annotation": "Automated inference of stable isotope incorporation rates in proteins for functional metaproteomics ",
         "tags": [],
-        "release": "0.2",
+        "release": "0.3",
         "collections": [
             "Proteomics"
         ],
-        "updated": "2024-06-17T00:00:00"
+        "updated": "2026-02-11T00:00:00"
     },
     {
         "iwcID": "clinicalmp-quantitation-main",
@@ -1122,15 +1122,15 @@
     {
         "iwcID": "sra-manifest-to-concatenated-fastqs-main",
         "trsID": "#workflow/github.com/iwc-workflows/sra-manifest-to-concatenated-fastqs/main",
-        "uuid": "5342719f-2706-4482-89c8-83a77e51e714",
+        "uuid": "f3a15899-64ba-4df8-ac94-d1bce448dfb4",
         "name": "sra_manifest_to_concatenated_fastqs_parallel",
         "annotation": "This workflow takes as input a SRA_manifest from SRA Run Selector and will generate one fastq file or fastq pair of file for each experiment (concatenated multiple runs if necessary). Output will be relabelled to match the column specified by the user.",
         "tags": [],
-        "release": "0.8",
+        "release": "0.9",
         "collections": [
             "Data Fetching"
         ],
-        "updated": "2026-01-19T00:00:00"
+        "updated": "2026-04-09T00:00:00"
     },
     {
         "iwcID": "parallel-accession-download-main",
@@ -1456,17 +1456,17 @@
     {
         "iwcID": "atacseq-main",
         "trsID": "#workflow/github.com/iwc-workflows/atacseq/main",
-        "uuid": "747f2432-7493-44b8-a5ee-82d104407cad",
+        "uuid": "87c3f4cf-1b88-43dc-849b-5d23c9da1f29",
         "name": "ATAC-seq Analysis: Chromatin Accessibility Profiling",
-        "annotation": "Complete ATAC-seq analysis pipeline for paired-end reads. Processes raw FASTQ data through adapter and bad quality removal (cutadapt), alignment (Bowtie2 end-to-end), and filtering (removes MT reads, discordant pairs, low mapping quality <30, PCR duplicates). Generates 5' cut site pileups (\u00b1100bp), performs peak calling, and quantifies reads in 1kb summit-centered regions. Produces two normalized coverage tracks (per million mapped reads and per million reads in peaks) and fragment length distribution plots for quality assessment.",
+        "annotation": "Complete ATAC-seq analysis pipeline for paired-end reads. Processes raw FASTQ data through adapter and bad quality removal (fastp), alignment (Bowtie2 end-to-end), and filtering (removes MT reads, discordant pairs, low mapping quality below 30, PCR duplicates). Generates 5' cut site pileups (\u00b1100bp), performs peak calling, and quantifies reads in 1kb summit-centered regions. Produces two normalized coverage tracks (per million mapped reads and per million reads in peaks) and fragment length distribution plots for quality assessment.",
         "tags": [
             "ATACseq"
         ],
-        "release": "1.0",
+        "release": "2.0",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2024-11-28T00:00:00"
+        "updated": "2025-10-03T00:00:00"
     },
     {
         "iwcID": "average-bigwig-between-replicates-main",
@@ -1545,17 +1545,17 @@
     {
         "iwcID": "chipseq-pe-main",
         "trsID": "#workflow/github.com/iwc-workflows/chipseq-pe/main",
-        "uuid": "923716d4-2cd0-4809-b904-0f34290e9db8",
+        "uuid": "8101beec-7eaa-48ef-adc3-6a4545b845cc",
         "name": "ChIP-seq Analysis: Paired-End Read Processing",
         "annotation": "Complete ChIP-seq analysis for paired-end sequencing data. Processes raw FASTQ files through adapter removal (fastp), alignment to reference genome (Bowtie2), and stringent quality filtering (MAPQ greater than 30, concordant pairs only). Peak calling with MACS2 optimized for paired-end reads identifies protein-DNA binding sites. Generates alignment files, coverage, peak calls, and quality metrics for downstream analysis.",
         "tags": [
             "ChIP"
         ],
-        "release": "1.0",
+        "release": "1.1",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2025-10-03T00:00:00"
+        "updated": "2026-04-06T00:00:00"
     },
     {
         "iwcID": "consensus-peaks-consensus-peaks-chip-sr",
@@ -1620,17 +1620,17 @@
     {
         "iwcID": "chipseq-sr-main",
         "trsID": "#workflow/github.com/iwc-workflows/chipseq-sr/main",
-        "uuid": "15b9a804-2996-4071-bdb9-65cd3852c139",
+        "uuid": "695f9da2-e902-4818-ac7b-ad2d2e94668d",
         "name": "ChIP-seq Analysis: Single-End Read Processing",
         "annotation": "Complete ChIP-seq analysis for single-end sequencing data. Processes raw FASTQ files through adapter removal (fastp), alignment to reference genome (Bowtie2), and quality filtering (MAPQ greater than 30). Peak calling with MACS2 uses a fixed extension of 200bp to identify protein-DNA binding sites. Generates alignment files, coverage, peak calls, and quality metrics for downstream analysis.",
         "tags": [
             "ChIP"
         ],
-        "release": "1.0",
+        "release": "1.1",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2025-10-03T00:00:00"
+        "updated": "2026-04-06T00:00:00"
     },
     {
         "iwcID": "scaffolding-bionano-vgp7-main",
@@ -1728,15 +1728,15 @@
     {
         "iwcID": "hi-c-contact-map-for-assembly-manual-curation-main",
         "trsID": "#workflow/github.com/iwc-workflows/hi-c-contact-map-for-assembly-manual-curation/main",
-        "uuid": "af433e73-ab8e-4f6c-ae4b-e9b1f560ef0e",
+        "uuid": "51640fb0-0e97-4a6b-baf6-234fc13400ba",
         "name": "PretextMap Generation from 1 or 2 haplotypes",
         "annotation": "This workflow generates Hi-C contact maps for genome assemblies in the Pretext format. It is compatible with one or 2 haplotypes. It includes tracks for PacBio read coverage, Gaps, and telomeres. The Pretext files can be open in PretextView for the manual curation of genome assemblies.",
         "tags": [],
-        "release": "2.2",
+        "release": "2.3",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2026-03-10T00:00:00"
+        "updated": "2026-03-30T00:00:00"
     },
     {
         "iwcID": "assembly-decontamination-vgp9-main",
@@ -1816,18 +1816,18 @@
     {
         "iwcID": "kmer-profiling-hifi-vgp1-main",
         "trsID": "#workflow/github.com/iwc-workflows/kmer-profiling-hifi-VGP1/main",
-        "uuid": "97851585-7df2-4871-b481-9bc837f251d0",
+        "uuid": "9006675f-b366-411e-b39f-5b4bab389988",
         "name": "K-mer profiling and reads statistics VGP1",
         "annotation": "Evaluation of Pacbio Hifi Reads and genome profiling. Create Meryl Database used for the estimation of assembly parameters and quality control with Merqury. Part of the VGP pipeline.",
         "tags": [
             "Reviewed",
             "VGP"
         ],
-        "release": "0.8",
+        "release": "0.9",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2026-01-30T00:00:00"
+        "updated": "2026-03-31T00:00:00"
     },
     {
         "iwcID": "influenza-isolates-consensus-and-subtyping-main",
